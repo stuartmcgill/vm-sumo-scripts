@@ -75,7 +75,7 @@ Vagrant.configure("2") do |config|
     apt-get install -y lsb-release ca-certificates apt-transport-https software-properties-common
     add-apt-repository ppa:ondrej/php
     apt-get update
-    apt-get install -y apache2 mysql-server curl unzip php8.2 php8.2-mysql php8.2-cli php8.2-curl php8.2-dom php8.2-mbstring php8.2-zip
+    apt-get install -y apache2 mysql-server curl unzip php8.2 php8.2-mysql php8.2-cli php8.2-curl php8.2-dom php8.2-mbstring php8.2-zip php8.2-xdebug
 
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
